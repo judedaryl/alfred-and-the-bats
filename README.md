@@ -11,12 +11,20 @@ Orchestrator, Configuration Keeper
 
 ### Bats
 
-Worker bats, does all the grunt work
+Worker bats, does all the grunt work. Contains a docker-in-docker service, so that we can run builds in containers inside the container for isolation and to ensure consistent behavior of the scripts.
 
 
 ### Build-Kits
 
-Instruction sets for building
+Instruction sets for building. Contains:
+* detection script
+* compilation script
+  * tests
+  * static code analysis
+  * vulnerability analysis
+  * compiling binaries
+* deployment script
+* specify docker image for each script????
 
 ### Deploy where?
 
